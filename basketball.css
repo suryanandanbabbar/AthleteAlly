@@ -1,0 +1,87 @@
+body {
+    background-color: aliceblue; 
+    text-align: center;
+    font-family: Helvetica Neue;
+    background-image: url("https://images.unsplash.com/photo-1509027572446-af8401acfdc3?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100% 100% 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    background-color: rgb(27, 27, 50, 0.8);
+    color: white;
+    text-align: left;
+    padding-top: 25px;
+    width: 720px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+h1, p {
+    color: white;
+    font-weight: 400;
+}
+h1 {
+    padding-top: 30px;
+}
+
+input, select, textarea, label {
+margin-left: 30px;
+font-size: 20px;
+}
+input, select {
+margin-bottom: 20px;
+margin-top: 10px;
+
+}
+button {
+    margin-top: 10px;
+    margin-left: 29px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #37af65;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 2px;
+
+}
+.italic {
+    font-style: italic;
+    font-weight: lighter;
+}
+textarea {
+    height: 100px;
+    width: 550px;
+}
+select {
+    width: 550px;
+    font-size: 60px;
+    margin-top: 5px;
+}
+form, input, textarea, button {
+    border-radius: 0.25rem;
+}
+input[id="name"], input[id="email"], input[id="number"], input[id="number"], select, button, textarea {
+    width: 650px;
+    display: block;
+    height: 2.375rem;
+}
+input[id="name"], input[id="email"], input[id="number"], input[id="number"] {
+    border: 1px solid #ced4da;
+}
+textarea {
+    height: 120px;
+
+}
+input, textarea {
+    text-indent: 10px;;
+}
+.ending {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+}

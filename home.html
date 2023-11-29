@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title -->
+		<title>Home</title>
+
+		<!-- Meta Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+
+		<!-- Linking with External CSS -->
+		<link href="home.css" rel="stylesheet" />
+
+		<!-- Linking with Bootstap Framework -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhF\dvKuhfTAU6auU8tT94WrHftjDbrCEXSUloBoqy\2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav id="navbar-example2" class="navbar bg-body-tertiary px-3">
+				<!-- Brand Logo -->
+				<img src="./Brand Logo.png" alt="LPU Logo" class="logo" />
+
+				<!-- Brand Name -->
+
+				<a class="navbar-brand" href="home.html">AthleteAlly</a>
+
+				<ul class="nav nav-underline">
+					<!-- About -->
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading2">About</a>
+					</li>
+
+					<!-- Clubs -->
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading3">Clubs</a>
+					</li>
+
+					<!-- Tournaments -->
+					<li class="nav-item">
+						<a class="nav-link" href="#tour-section">Tournaments</a>
+					</li>
+
+					<!-- News -->
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading4">News</a>
+					</li>
+
+					<!--Contact Us -->
+					<li class="nav-item">
+						<button
+							style="
+								background-color: unset !important;
+								color: black;
+								border-color: white !important;
+								font-size: 30px;
+								margin-left: -10px;
+								margin-right: 10px;
+								margin-top: -2px;
+							"
+							class="btn btn-primary nav-link"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasRight"
+							aria-controls="offcanvasRight"
+						>
+							Contact Us
+						</button>
+					</li>
+					<div
+						class="offcanvas offcanvas-end"
+						tabindex="-1"
+						id="offcanvasRight"
+						aria-labelledby="offcanvasRightLabel"
+					>
+						<div class="offcanvas-header">
+							<h5
+								class="offcanvas-title"
+								id="offcanvasRightLabel"
+							>
+								Drop Us A Line
+								<!-- <h5
+									class="line"
+									style="
+										text-transform: uppercase !important;
+										margin-top: 7px;
+										margin-left: -20px;
+									"
+								>
+									Line
+								</h5> -->
+							</h5>
+
+							<button
+								style="
+									background-color: white !important;
+									margin-top: -25px;
+									margin-right: 2px;
+								"
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<a href="https://www.linkedin.com/in/snb37/">
+								<button class="linkedin btn-lg btn btn-primary">
+									LinkedIn
+								</button>
+							</a>
+							<br />
+							<a
+								href="https://instagram.com/punya0908?igshid=MTk0NTkyODZkYg=="
+							>
+								<button class="telegram btn-lg btn btn-primary">
+									Instagram
+								</button>
+							</a>
+							<br />
+							<a href="https://github.com/suryanandanbabbar">
+								<button class="github btn-lg btn btn-primary">
+									GitHub
+								</button>
+							</a>
+							<h3>All rights reserved ©</h3>
+							<h6>Handcrafted with HTML5 | CSS3 | JavaScript</h6>
+						</div>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banners -->
+		<div id="carouselExampleCaptions" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=1380&t=st=1696684392~exp=1696684992~hmac=2b8de44373698c1cd44067af451763165134b4ab6503777eaf27b58c210353dc"
+						class="d-block w-100 img1"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<hr />
+						<p class="title">Welcome To LPU Sports League</p>
+						<h5
+							style="color: black"
+							class="heading-label animate-character"
+						>
+							Live like a Champion
+						</h5>
+						<p style="color: black" class="para-label">
+							Changing the way to sports.
+						</p>
+						<a href="#aboutsection">
+							<button
+								type="button"
+								id="#scrollspyHeading1"
+								class="about-button btn"
+							>
+								About League
+							</button>
+						</a>
+						<a href="#scrollspyHeading3">
+							<button
+								type="button"
+								class="btn btn-light team-button"
+								id="#scrollspyHeading2"
+							>
+								Our Team
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			data-bs-spy="scroll"
+			data-bs-target="#navbar-example2"
+			data-bs-root-margin="0px 0px -40%"
+			data-bs-smooth-scroll="true"
+			class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+			tabindex="0"
+		>
+			<!-- About -->
+			<div class="aboutsection" id="aboutsection">
+				<!-- Card -->
+				<div
+					class="card about-card shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+					style="padding: 0 36px"
+				>
+					<!-- Image -->
+					<div class="img-container"></div>
+					<div class="card-body about-card-body">
+						<!-- Animate Character -->
+						<span
+							class="continues"
+							id="continues"
+							style="text-transform: capitalize !important"
+							>The League Continues</span
+						>
+						<!-- Horizontal Rule -->
+						<hr class="abouthr1" />
+						<!-- Heading -->
+						<h4
+							id="scrollspyHeading1"
+							class="aboutsectionheading about-label"
+						>
+							About
+						</h4>
+					</div>
+					<!-- Content -->
+					<p class="lead" style="background-color: unset !important">
+						Welcome to a world of where passion for sports ignites
+						the spirit of camaraderie and competition! At
+						AthleteAlly, we extend a grand welcome to every athlete,
+						enthusiast, and supporter who shares our love for
+						sports.
+
+						<br />
+						Whether you're stepping into the field for the first
+						time or you're a seasoned player, you've found your home
+						here. We take immense pride in offering a diverse range
+						of sports programs designed to cater to all ages and
+						skill levels. From the thrill of competitive matches to
+						the joy of recreational play, there's something for
+						everyone at AthleteAlly. Come join the excitement at
+						AthleteAlly - where every moment counts in the world of
+						sports!
+					</p>
+				</div>
+			</div>
+
+			<!-- Clubs -->
+			<div class="clubsection">
+				<h4
+					id="scrollspyHeading2"
+					class="aboutsectionheading club-label"
+				>
+					Clubs
+				</h4>
+				<hr class="abouthr" />
+				<a href="./soccer.html" alt="soccer" target="_blank">
+					<div
+						class="card"
+						style="margin-left: 475px; margin-top: 180px"
+					>
+						<div class="wrapper" style="margin-top: -120px">
+							<!-- https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg -->
+							<img src="./soccer.jpg" class="cover-image" />
+						</div>
+						<!-- <img
+							src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png"
+							class="title"
+						/> -->
+						<!-- https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp -->
+						<img src="./soccer2.png" class="character" />
+					</div>
+				</a>
+
+				<a href="./badminton.html" alt="badminton" target="_blank">
+					<div class="card" style="margin-left: 800px">
+						<div class="wrapper" style="margin-top: -120px">
+							<!-- https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg -->
+							<img
+								src="https://images.unsplash.com/photo-1559309106-ed14040fd35d?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="cover-image"
+							/>
+						</div>
+						<!-- <img
+							src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png"
+							class="title"
+						/> -->
+						<!-- <h3 class="title title3">Soccer</h3> -->
+						<!-- https://ggayane.github.io/css-experiments/cards/force_mage-character.webp -->
+						<img src="./badminton.png" class="character" />
+					</div>
+				</a>
+				<a href="./cricket.html" alt="Cricket" target="_blank">
+					<div class="card" style="margin-left: 1115px">
+						<div class="wrapper" style="margin-top: -120px">
+							<!-- https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg -->
+							<img
+								src="https://images.unsplash.com/photo-1593341646782-e0b495cff86d?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="cover-image"
+							/>
+						</div>
+						<!-- <img
+							src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png"
+							class="title"
+						/> -->
+						<!-- <h3 class="title title4">Cricket</h3> -->
+						<!-- https://ggayane.github.io/css-experiments/cards/force_mage-character.webp -->
+						<img src="./cricket.png" class="character" />
+					</div>
+				</a>
+				<a href="./basketball.html" alt="basketball" target="_blank">
+					<div
+						class="card"
+						style="margin-left: 150px; margin-top: -128px"
+					>
+						<div class="wrapper">
+							<!-- https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg -->
+							<img
+								src="https://images.unsplash.com/photo-1515523110800-9415d13b84a8?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="cover-image"
+							/>
+						</div>
+						<!-- <img
+							src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png"
+							class="title"
+						/> -->
+						<!-- https://ggayane.github.io/css-experiments/cards/force_mage-character.webp -->
+						<img src="./download.png" class="character" />
+					</div>
+				</a>
+				<p
+					class="lead shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+					style="background-color: unset !important"
+				>
+					Welcome to <b>AthleteAlly</b>, the ultimate destination for
+					sports enthusiasts!
+					<br />
+					Dive into the world of Soccer, Basketball, Badminton, and
+					Cricket by joining our thrilling leagues. Click on your
+					preferred sport's banner above, fill out the registration
+					form, and let the games begin!
+					<br />
+
+					<b>Why Join?</b>
+					<br />
+					<b><q>Passionate Play:</q></b> Experience the intensity and
+					joy of your favorite sport.
+					<br />
+					<b><q>Community Spirit:</q></b> Connect with fellow athletes
+					and build lasting friendships.
+					<br />
+					<b><q>Simple Steps:</q></b> Click, register, and play – it's
+					that easy!
+					<br />
+
+					Ready to make your mark on the field? Choose your sport,
+					click, and Register NOW!
+				</p>
+			</div>
+
+			<!-- Tournaments -->
+
+			<div class="toursection" id="toursection">
+				<h4
+					id="scrollspyHeading3"
+					class="aboutsectionheading tour-label"
+				>
+					Tournaments
+				</h4>
+				<hr class="abouthr" />
+				<div class="content-3">
+					<h2>Teams</h2>
+					<h2>Teams</h2>
+				</div>
+				<!-- Teams Table -->
+				<table
+					class="table shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+				>
+					<thead>
+						<tr>
+							<th
+								style="background-color: bisque !important"
+								scope="col"
+							>
+								Ranking
+							</th>
+							<th
+								style="background-color: bisque !important"
+								scope="col"
+							>
+								Teams
+							</th>
+							<th
+								style="background-color: bisque !important"
+								scope="col"
+							>
+								Wins
+							</th>
+							<th
+								style="background-color: bisque !important"
+								scope="col"
+							>
+								Points
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Celestial Strikers&nbsp;(CS)</td>
+							<td>12</td>
+							<td>48</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Crimson Thunderhawks&nbsp;(CD)</td>
+							<td>10</td>
+							<td>40</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Mirage Mavericks&nbsp;(MM)</td>
+							<td>9</td>
+							<td>36</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Nebula Nomads&nbsp;(NN)</td>
+							<td>7</td>
+							<td>28</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Zenith Zephyrs&nbsp;(ZZ)</td>
+							<td>4</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Fercious Tigers&nbsp;(FT)</td>
+							<td>5</td>
+							<td>12</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="content-2">
+					<h2>Fixtures</h2>
+					<h2>Fixtures</h2>
+				</div>
+				<table
+					class="table shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+				>
+					<thead>
+						<tr>
+							<th
+								style="background-color: darksalmon"
+								scope="col"
+							>
+								Date
+							</th>
+							<th
+								style="background-color: darksalmon"
+								scope="col"
+							>
+								Teams
+							</th>
+							<th
+								style="background-color: darksalmon"
+								scope="col"
+							>
+								Stadium
+							</th>
+							<th
+								style="background-color: darksalmon"
+								scope="col"
+							>
+								State
+							</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<th scope="row">1.12.2023</th>
+							<td>CS vs ZZ</td>
+							<td>Eden Gardens</td>
+							<td>Kolkata</td>
+						</tr>
+						<tr>
+							<th scope="row">3.12.2023</th>
+							<td>MM vs CD</td>
+							<td>Chinnaswamy Stadium</td>
+							<td>Karnataka</td>
+						</tr>
+						<tr>
+							<th scope="row">5.12.2023</th>
+							<td>NN vs FC</td>
+							<td>PCA Stadium</td>
+							<td>Punjab</td>
+						</tr>
+						<tr>
+							<th scope="row">Semi-Final</th>
+							<td>TBD</td>
+							<td>TBD</td>
+							<td>TBD</td>
+						</tr>
+						<tr>
+							<th scope="row">Final</th>
+							<td>TBD</td>
+							<td>TBD</td>
+							<td>TBD</td>
+						</tr>
+					</tbody>
+				</table>
+				<section id="tour-section"></section>
+			</div>
+		</div>
+
+		<!-- News -->
+		<div class="newssection">
+			<h4 id="scrollspyHeading4" class="newssectionheading news-label">
+				News
+			</h4>
+
+			<div id="grid">
+				<div class="left">
+					<h1
+						style="
+							margin-left: 20px;
+							margin-top: 20px;
+							color: white;
+						"
+					>
+						Basketball
+					</h1>
+					<p class="lead news-1 overflow-scroll">
+						In a game-changing move that has our courts buzzing with
+						excitement, AthleteAlly proudly presents the latest
+						scoop from the world of basketball. Brace yourselves for
+						a slam dunk sensation that's set to redefine the game!
+						High-Flying Action: Our basketball leagues are soaring
+						to new heights with gravity-defying slam dunks, dazzling
+						crossovers, and nail-biting buzzer-beaters. The hardwood
+						is alive with the rhythm of sneakers squeaking and fans
+						roaring as teams battle it out for supremacy. Our
+						basketball community is not just witnessing the games;
+						they're becoming an integral part of the action. The
+						electrifying atmosphere in the stands is contagious,
+						with fans creating an unmissable frenzy that adds an
+						extra layer of excitement to every match.
+						<br />
+						Don't miss out on the slam dunk sensation – join
+						AthleteAlly basketball leagues now!
+					</p>
+				</div>
+
+				<div class="center">
+					<h1
+						style="
+							margin-left: 20px;
+							margin-top: 20px;
+							color: white;
+						"
+					>
+						Soccer
+					</h1>
+					<p class="lead news-1 overflow-scroll">
+						Hold on to your hats, soccer enthusiasts! [Your Sports
+						League Management System] is unleashing a soccer
+						spectacle that promises goals, glory, and game-changing
+						moments. Get ready to be swept away by the tidal wave of
+						excitement as our soccer leagues redefine the beautiful
+						game! Mesmerizing Skill Showcase: Step onto the pitch
+						where soccer wizards weave their magic with mesmerizing
+						dribbles, pinpoint passes, and jaw-dropping goals. The
+						soccer arenas are pulsating with skillful displays that
+						leave fans in awe and opponents scratching their heads.
+						Rivalry Rises: The competition is fierce as teams ignite
+						longstanding rivalries and forge new ones on the soccer
+						pitch. Each match is a clash of titans, with players
+						leaving nothing to chance in their pursuit of victory.
+						<br />
+						Don't miss out on the goal galore – join AthleteAlly
+						soccer leagues now!
+					</p>
+				</div>
+				<div class="right">
+					<h1
+						style="
+							margin-left: 10px;
+							margin-top: 20px;
+							color: white;
+						"
+					>
+						Badminton
+					</h1>
+					<p class="lead news-1 overflow-scroll">
+						Badminton enthusiasts, brace yourselves for a
+						shuttlecock showdown like never before! AthleteAlly is
+						proud to present the latest buzz from the world of
+						badminton, where swift rallies, lightning-fast smashes,
+						and unexpected twists are taking the game to new
+						heights.
+						<br />
+						<b>Rapid-Fire Rallies:</b> Our badminton leagues are
+						witnessing rallies that blur the lines between precision
+						and chaos. Players engage in rapid-fire exchanges,
+						showcasing lightning reflexes and unmatched agility that
+						keep spectators at the edge of their seats.
+						<br />
+						<b>Smash Spectacle:</b> The smash has taken center
+						stage, with players delivering powerful shots that echo
+						through the courts. Each match is a display of badminton
+						mastery, featuring smashes that leave opponents
+						scrambling and audiences in awe.
+						<br />
+						<b>Doubles Drama:</b> Doubles matches are stealing the
+						spotlight with dynamic duos executing synchronized plays
+						that are as entertaining as they are strategic. The
+						chemistry between teammates is palpable, adding an extra
+						layer of excitement to every rally.
+						<br />
+						<b>Underdog Triumphs:</b> Surprises are in store as
+						underdog players rise to the occasion, toppling
+						higher-ranked opponents with unexpected strategies and
+						unwavering determination. The badminton court is proving
+						to be the great equalizer, where anything can happen.
+						<br />
+						How to Join the Shuttle Showdown: Ready to be a part of
+						the badminton bonanza? Click on the badminton banner in
+						Clubs Section, and you're just a few clicks away from
+						securing your spot in our action-packed leagues.
+						<br />
+						Register now to experience the thrill of badminton at
+						its finest! Don't miss out on the birdie brawl – join
+						AthleteAlly badminton leagues now!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Around the World Animation-->
+		<div id="text" class="text0">Around The World</div>
+		<div id="text" class="text1">Be Sporty</div>
+		<div id="text" class="text2">Around The World</div>
+		<div id="text" class="text3">Be AthleteAlly</div>
+
+		<div id="dummy">
+			<div id="back">BACK TO TOP</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer">
+				<!-- Brand Name -->
+				<img src="./Brand Logo.png" />
+				<h3 style="margin-left: 230px">AthleteAlly</h3>
+				<p>
+					A subsidiary of
+					<a href="https://www.lpu.in"
+						>Lovely Professional University</a
+					>
+				</p>
+
+				<hr />
+				<p>Handcrafted with HTML5 | CSS3 | JavaScript</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
